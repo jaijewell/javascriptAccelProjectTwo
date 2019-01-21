@@ -1,0 +1,156 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*font-family: 'Charm', cursive;
+font-family: 'Montserrat', sans-serif;*/
+
+html {
+  font-size:62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  color:white;
+}
+
+header {
+  background-image: url("./assets/dog2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.navFormButton {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navFormButton button {
+    margin: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.3rem;
+    width:15%;    
+    padding: 1%;
+    background: #63733d;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;  
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  background: linear-gradient(to bottom right, #63733d, #fff);
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background: linear-gradient(to top right, #63733d, #fff);
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
+
+input[type="text"] {
+    padding-left: 15px;
+    background: none;
+    margin: 10% auto;
+    height: 50px;
+    font-size: 1.9rem;
+    border: 2px solid white;
+    box-shadow: 2px 2px 2px rgba(68,68,68,0.6);
+    display: block;
+    width: 80%;
+}
+
+::placeholder {
+  color: white;
+}
+
+input[type="button"] {
+    margin: -3% auto;
+    padding: 2% 5%;
+    background: #63733d;
+    box-shadow: 2px 2px 2px rgba(68,68,68,0.6);
+    border: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    border-radius: 25px;
+}
+
+.userInput {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding:0;
+    height: 100vh;
+    font-size: 2rem;
+}
+
+.inputBorder {
+  width: 40%;
+  height: 40vh;
+  border: 5px solid #fff;
+  text-align: center;
+}
+
+.flip {
+  width: 100%;
+}
+.imgContainer {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+ }
+
+.profile {
+  width: 15%;
+  margin: 25px;
+  border: 5px solid #63733d;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.profile img {
+  justify-content: center;
+  object-fit: cover;
+  width: 100%;
+/*  height: 175px; too inconsistent, setting height cuts off too much of photos in the wrong places*/
+}
+.searchAgainContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchAgain {   
+    padding: 2%;
+    background: #63733d;
+    box-shadow: 2px 2px 2px rgba(68,68,68,0.6);
+    border: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    border-radius: 25px;
+}
